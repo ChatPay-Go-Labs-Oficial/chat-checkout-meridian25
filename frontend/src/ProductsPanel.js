@@ -60,7 +60,7 @@ function ProductsPanel({ vendor, onBack }) {
         setProducts([]);
       }
     } catch (err) {
-      console.error("Erro ao carregar produtos", err);
+      console.error("Erro ao carregar produtos:", err);
       setProducts([]);
     } finally {
       setLoading(false);
